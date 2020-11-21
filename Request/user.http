@@ -1,0 +1,38 @@
+@api = http://localhost:3000
+###
+GET {{api}}/user
+
+###
+GET {{api}}/user/5faffd335bb64c05f88827d3
+
+###
+POST {{api}}/user/
+Content-Type: application/json
+
+{
+    "firstName": "David",
+    "lastName":"Curras" ,
+    "email": "david@gmail.com",
+    "password": "password",
+    "birthday": "02/03/1997",
+    "govIdType": "DNI",
+    "govIdNumber": "42774456",
+    "country": "Argentina",
+    "city": "Rosario",
+    "phoneNumber": 341785412,
+    "avatar": "Esto es una avatar otaku",
+    "role": "5fb91d032804272e2c4d4035" ,
+    "rating": 5,
+    "status": "Inactivo"
+}
+
+###
+DELETE {{api}}/user/5fb259307a30fa0a102364c0
+
+###
+PUT {{api}}/user/5faffd335bb64c05f88827d3
+Content-Type: application/json
+
+{
+    "status": "Inactivo"
+}

@@ -1,0 +1,39 @@
+@api = http://localhost:3000
+###
+GET {{api}}/tournament
+
+###
+GET {{api}}/tournament/5fb8f7e0b693d84ee453a541
+
+###
+POST {{api}}/tournament/
+Content-Type: application/json
+
+{
+    "name": "TORNEO CS GO UTN CORDOBA",
+    "adminId": "5fb91dbe2804272e2c4d4037",
+    "image": "https://comercioyjusticia.info/wp-content/uploads/2018/04/UTN.jpg",
+    "game":"5fb9209b2804272e2c4d4042",
+    "state": "Subscribing",
+    "creationDate" : "2002-12-09",
+    "publicationDate" : "2002-12-09",
+    "enrollStartDate" : "2002-12-09",
+    "enrollEndDate" : "2002-12-09",
+    "tournamentStartDate" : "2002-12-09",
+    "tournamentEndDate": "2002-12-09",
+    "players": "5fb91dff2804272e2c4d4039",
+    "waitlist": "Muchos",
+    "maxPlayers": 256,
+    "rules": ["5fb921152804272e2c4d4044"]
+}
+
+###
+DELETE {{api}}/tournament/5fb8ff0eef448811146901e0
+
+###
+PUT {{api}}/tournament/5fb8f7e0b693d84ee453a541
+Content-Type: application/json
+
+{
+    "maxPlayers": 64
+}

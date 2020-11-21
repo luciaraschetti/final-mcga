@@ -1,0 +1,27 @@
+@api = http://localhost:3000
+###
+GET {{api}}/gameRating
+
+###
+GET {{api}}/gameRating/5fb269ce493d3511b06c88ae
+
+###
+POST {{api}}/gameRating/
+Content-Type: application/json
+
+{
+    "name": "ESRB(Adults Only +18)",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/ESRB_2013_Adults_Only.svg/1200px-ESRB_2013_Adults_Only.svg.png",
+    "description": "18 años"
+}
+
+###
+DELETE {{api}}/gameRating/xxxxxxxxxxxxxxxxxx
+
+###
+PUT {{api}}/gameRating/5fb269e6493d3511b06c88b0
+Content-Type: application/json
+
+{
+    "name": "ESRB(Adults Only +188)"
+}

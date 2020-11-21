@@ -1,0 +1,29 @@
+@api = http://localhost:3000
+###
+GET {{api}}/game
+
+###
+GET {{api}}/game/5fb920122804272e2c4d4040
+
+###
+POST {{api}}/game/
+Content-Type: application/json
+
+{
+    "name": "CS GO 2",
+    "genre": "Shooter",
+    "ratingId" : "5fb91f812804272e2c4d403e",
+    "image": "https://e00-marca.uecdn.es/assets/multimedia/imagenes/2019/03/27/15537190644260.png",
+    "description": "Juego de disparos"
+}
+
+###
+DELETE {{api}}/game/5fb002dfc3106f47f027f87f
+
+###
+PUT {{api}}/game/5fad2b4dc9981f1f3036afef
+Content-Type: application/json
+
+{
+    "image": "Esto es una imagen del TFT"
+}

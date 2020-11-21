@@ -1,0 +1,28 @@
+@api = http://localhost:3000
+###
+GET {{api}}/defaultRule
+
+###
+GET {{api}}/defaultRule/5fb262fb852c86345cb7c4f3
+
+###
+POST {{api}}/defaultRule/
+Content-Type: application/json
+
+{
+  "name": "Edad Minima",
+  "value": "15",
+  "description": "Edad minima de los jugadores"
+}
+
+###
+DELETE {{api}}/defaultRule/XXXXXXXXXXXXXXXXXXXXX
+
+###
+PUT {{api}}/defaultRule/5fb26360852c86345cb7c4f4
+Content-Type: application/json
+
+{
+    "value": "Si"
+}
+

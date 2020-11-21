@@ -1,0 +1,24 @@
+@api = http://localhost:3000
+###
+GET {{api}}/role
+
+###
+GET {{api}}/role/5fad2c7b7eb0992e30e54008
+
+###
+POST {{api}}/role/
+Content-Type: application/json
+
+{
+    "name" : "Public"
+}
+###
+DELETE {{api}}/role/5faffc3300ad130d608903d2
+
+###
+PUT {{api}}/role/5faffc3300ad130d608903d2
+Content-Type: application/json
+
+{
+    "name": "Superadmin"
+}

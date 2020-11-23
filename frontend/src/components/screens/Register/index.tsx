@@ -3,9 +3,9 @@ import Layout from '../../layouts/Login/Index';
 
 const Index = () => {
 	return (
-		<div>
-			<Layout buttonText='Login' />
-		</div>
+		<Layout buttonText='Login'>
+			{/* Register Form */}
+		</Layout>
 	);
 }
 

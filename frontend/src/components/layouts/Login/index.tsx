@@ -25,6 +25,7 @@ const Index = (props: any) => {
           <Button color='inherit'>{props.buttonText}</Button>
         </Toolbar>
       </AppBar>
+      {props.children}
     </React.Fragment>
   );
 }

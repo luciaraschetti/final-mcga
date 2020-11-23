@@ -1,11 +1,12 @@
 import React from 'react';
+import Layout from '../../layouts/Login/Index'
 
-const index = () => {
-    return (
-        <div>
-            <h1>Login</h1>
-        </div>
-    );
+const Index = () => {
+	return (
+		<div>
+			<Layout buttonText='Register' />
+		</div>
+	);
 }
 
-export default index;
+export default Index;

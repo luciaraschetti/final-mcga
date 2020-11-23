@@ -1,6 +1,7 @@
 import './App.css';
-import Login from './screens/Login/Login';
-import Register from './screens/Register/Register';
+import React from 'react';
+import Login from './screens/Login';
+import Register from './screens/Register';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 function App() {

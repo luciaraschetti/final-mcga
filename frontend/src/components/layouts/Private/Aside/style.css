@@ -1,0 +1,57 @@
+.aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #232F3E;
+    color: white;
+    width: 15vw;
+    height: 100vh;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 75px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: violet;
+  margin-top: 20px;
+  color: black;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.aside .list ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    width: 100%;
+}
+
+.aside ul li {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;  
+    margin-top: 7px;
+}
+
+.aside ul li:hover {
+    cursor: pointer;
+    color: #FC6225;
+    font-size: 18px;
+}
+
+@media (max-width: 865px) {
+  .aside {
+    width: 25vw;
+  }
+}

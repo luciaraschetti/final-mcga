@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from '../../layouts/Login/Index'
+import Layout from '../../layouts/Login/index'
 
 const Index = () => {
 	return (

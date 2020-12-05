@@ -1,0 +1,29 @@
+.containerLayoutPrivate {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100vw;
+    height: 100vh;
+}
+
+.title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #FC6225;
+    color: white;
+    width: 85vw;
+    height: 15%;
+    border: 1px solid orange;
+}
+
+.title h1 {
+    margin-left: 20px;
+}
+
+@media (max-width: 865px) {
+  .title {
+    width: 75vw;
+  }
+}

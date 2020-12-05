@@ -1,10 +1,10 @@
 import React from 'react';
+import MLayout from '../../layouts/Private/index';
 
 const Index = () => {
     return (
-        <div>
-            Dashboard
-        </div>
+        <MLayout headerText='Dashboard'>
+        </MLayout>
     );
 }
 

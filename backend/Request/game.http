@@ -10,20 +10,21 @@ POST {{api}}/game/
 Content-Type: application/json
 
 {
-    "name": "CS GO 2",
-    "genre": "Shooter",
+    "name": "TFT",
+    "genre": "Strategy",
     "ratingId" : "5fb91f812804272e2c4d403e",
-    "image": "https://e00-marca.uecdn.es/assets/multimedia/imagenes/2019/03/27/15537190644260.png",
-    "description": "Juego de disparos"
+    "image": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltfe81204b8ec63e0e/5e6184a918d3347ceffbbd6d/TFT.S3_GALAXIES.ARTICLE-2.jpg",
+    "description": "Juego de cartas"
 }
 
 ###
 DELETE {{api}}/game/5fb002dfc3106f47f027f87f
 
 ###
-PUT {{api}}/game/5fad2b4dc9981f1f3036afef
+PUT {{api}}/game/5fb956b86980101d50479c0e
 Content-Type: application/json
 
 {
-    "image": "Esto es una imagen del TFT"
+    "name":"Cs 1.6 No Steam",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSN_8E-4unZJZ8_FQlEfJYSBlN45rC4ICnSg&usqp=CAU"
 }

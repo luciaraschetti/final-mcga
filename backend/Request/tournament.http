@@ -10,11 +10,11 @@ POST {{api}}/tournament/
 Content-Type: application/json
 
 {
-    "name": "TORNEO CS GO UTN CORDOBA",
+    "name": "TORNEO IBAI BENEFICO",
     "adminId": "5fb91dbe2804272e2c4d4037",
-    "image": "https://comercioyjusticia.info/wp-content/uploads/2018/04/UTN.jpg",
+    "image": "https://esports.as.com/2019/10/23/bonus/influencers/torneo-Bilbao-dias-diciembre_1293780610_290429_1440x600.jpg",
     "game":"5fb9209b2804272e2c4d4042",
-    "state": "Subscribing",
+    "state": "Finished",
     "creationDate" : "2002-12-09",
     "publicationDate" : "2002-12-09",
     "enrollStartDate" : "2002-12-09",
@@ -23,7 +23,7 @@ Content-Type: application/json
     "tournamentEndDate": "2002-12-09",
     "players": "5fb91dff2804272e2c4d4039",
     "waitlist": "Muchos",
-    "maxPlayers": 256,
+    "maxPlayers": 32,
     "rules": ["5fb921152804272e2c4d4044"]
 }
 

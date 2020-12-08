@@ -5,6 +5,8 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
+import { Link } from 'react-router-dom';
+import Logo from './img/pngegg.png';
 
 const useStyles = makeStyles(theme => ({
   title: {
@@ -19,7 +21,8 @@ const Index = (props: any) => {
     <React.Fragment>
       <AppBar position='relative' elevation={0}>
         <Toolbar>
-          <Typography variant='h4' className={classes.title} color='inherit' noWrap>  
+          <Link to="/public"><img src={Logo} className="logoNavbar" /></Link>
+          <Typography variant='h4' className={classes.title} color='inherit' noWrap>
             eSports Platform
           </Typography>
           <Button color='inherit'>{props.buttonText}</Button>

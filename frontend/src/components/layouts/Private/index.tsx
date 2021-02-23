@@ -8,8 +8,11 @@ const Index = (props: any) => {
         <React.Fragment>
             <div className="containerLayoutPrivate">
                 <Aside />
+                <div className="childContainer">
                 <div className="title">
                     <h1>{props.headerText}</h1>
+                </div>
+                {props.children}
                 </div>
             </div>
         </React.Fragment>

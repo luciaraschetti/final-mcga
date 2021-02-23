@@ -11,13 +11,12 @@ const Index = () => {
 		axios.post("http://localhost:4000/api/auth/signin", {
 			email,
 			password
-		}, {
-			withCredentials: true
 		}).then((res: AxiosResponse) => {
-			if (res.data === "success") {
-				window.location.href = "http://localhost:3001/dashboard"
-				console.log('SIII FUNCIONA PA	')
-			}
+			window.location.href = "http://localhost:3000/dashboard"
+			// if (res.data === "success") {
+			// 	window.location.href = "http://localhost:3000/dashboard"
+			// 	console.log('Loged')
+			// }
 		}, () => {
 			console.log("Failure");
 		})

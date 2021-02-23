@@ -10,12 +10,12 @@ import roleRoutes from './routes/Role.routes';
 
 const app = express();
 
-app.set('port',3000);
+app.set('port', 3000);
 
 app.use(morgan('dev'));
 app.use(cors());
 app.use(express.json());
-app.use(express.urlencoded({extended:false}));
+app.use(express.urlencoded({ extended: false }));
 
 app.use(userRoutes);
 app.use(gameRoutes);

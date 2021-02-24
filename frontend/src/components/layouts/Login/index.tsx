@@ -1,3 +1,4 @@
+import './style.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import AppBar from '@material-ui/core/AppBar';
@@ -25,7 +26,7 @@ const Index = (props: any) => {
           <Typography variant='h4' className={classes.title} color='inherit' noWrap>
             eSports Platform
           </Typography>
-          <Button color='inherit'>{props.buttonText}</Button>
+          <Link to={props.buttonText} className="buttonNav"><Button color='inherit'>{props.buttonText}</Button></Link>
         </Toolbar>
       </AppBar>
       {props.children}

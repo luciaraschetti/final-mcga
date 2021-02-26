@@ -13,9 +13,7 @@ const Index = () => {
 	const [email, setEmail] = useState<string>("")
 	const [password, setPassword] = useState<string>("")
 
-	const error = () => swal("User invalid!", "Try again or Register Now!!!");
-
-
+	const error = () => swal("Error", "User invalid, try register now", "error")
 
 	const login = () => {
 		axios.post("http://localhost:4000/api/auth/signin", {
@@ -37,6 +35,7 @@ const Index = () => {
 	return (
 		<Layout buttonText='Register'>
 			<div className="login">
+				<h1>Login</h1>
 				<img src={Logo} className="logoNavbar" />
 				<div className="loginForm">
 					<TextField id="outlined-basic"

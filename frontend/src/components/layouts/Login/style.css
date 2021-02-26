@@ -1,0 +1,11 @@
+.buttonNav {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #3a57ea;
+    border-radius: 5px;
+}
+
+.buttonNav:hover {
+    color: aliceblue;
+}
